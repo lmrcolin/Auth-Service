@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+system:
+  hostname: localhost
+
+spring:
+  application:
+    name: servicio-autenticacion
+  datasource:
+    url: jdbc:mysql://localhost:3306/dwb
+    password: Hola$123., 
+    username: carlos 
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+springdoc:
+    swagger-ui:
+        operations-sorter: method
+        default-model-expand-depth: 5
+        default-model-rendering: model
+    packagesToScan: com.unam.dwb.auth.controller
+    pathsToMatch: /**
