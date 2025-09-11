@@ -21,13 +21,9 @@ public class UsuarioJdbcRepository {
 		List<Usuario> resultQuery = jdbcTemplate.query(sql, 
 				(rs, row) -> new Usuario(
 						rs.getString("username"),
-						rs.getString("correo"))
-				);
+						rs.getString("correo")),
+				nombreUsuario);
 		return resultQuery.stream().findFirst();
 	}
-	
-	
-	 
-	
 
 }
