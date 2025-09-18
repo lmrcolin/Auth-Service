@@ -55,7 +55,7 @@ public class DefaultUsuarioService implements UsuarioService {
 		}	
 
 		Usuario usuarioNuevo = usuarioRequestToUsuario(request);
-		HashSet<String> roles = new HashSet<String>();
+		HashSet<String> roles = new HashSet<>();
 		roles.add(Rol.ROLE_USER.getNombreRol());
 		usuarioNuevo.setRoles(roles);
 		Usuario usuario = usuarioJpaRepository.save(usuarioNuevo);
