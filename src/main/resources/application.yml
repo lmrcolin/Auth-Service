@@ -2,7 +2,11 @@ server:
   port: 8081
 
 system:
-  hostname: localhost
+  p12FilePath: localhost.p12
+  p12PrivkPwd: DVG7tS2fcta2xj1QGPy6G1Dws/J0Su0ALxuJ+EaN3zJjXpy6K4Y=
+  p12PrivkAlias: 4gb0JWnF8fFoK1n0ykXTQxL8jPPNhJKC9qTUdLdfYZGHALbBIA==
+  hostname: Vy5aAoXEi/1RcOOsL2d4kJYxwjuvwuyHJ9eksDXwFyetwnQyZA==
+  p12FilePwd: Q5lC6wYAGQ4+BgvdBLqxRebvVv8fBcRl1Fyz5cgTKhasW0M8aTk=
 
 spring:
   application:
@@ -27,3 +31,5 @@ springdoc:
         default-model-rendering: model
     packagesToScan: com.unam.dwb.auth.controller
     pathsToMatch: /**
+
+    
