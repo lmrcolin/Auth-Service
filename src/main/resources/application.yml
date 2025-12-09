@@ -20,8 +20,8 @@ spring:
       uri: http://localhost:8888
   datasource:
     url: jdbc:mysql://localhost:3306/bdbackend
-    username: root
-    password: Guayacahuala23.
+    username:
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     open-in-view: false
