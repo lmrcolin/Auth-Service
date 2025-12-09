@@ -39,3 +39,5 @@ springdoc:
     default-model-rendering: model
   packagesToScan: com.unam.dwb.auth.controller
   pathsToMatch: /**
+
+#registry: localhost 8761
